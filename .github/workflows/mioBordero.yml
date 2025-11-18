@@ -6,7 +6,7 @@ on:
       CYCLE_NAME:
         description: "Cycle name to pass to setup.py"
         required: true
-        default: "SIAE MioBorderò"
+        default: "SIAE Accertatori"
       MOBILE_OS:
         description: "Mobile OS to pass to setup.py and JAR command"
         required: true
