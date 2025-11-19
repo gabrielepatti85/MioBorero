@@ -14,7 +14,7 @@
     "monitoring": false,
     "monitoring_time": null,
     "selectors": [
-	{
+      {
         "name": "Accedi",
         "xpath": "//android.widget.Button[@text=\"Accedi\"]",
         "status": "TBD",
@@ -29,7 +29,7 @@
       },
       {
         "name": "username",
-        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.EditText",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=2]//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.EditText[position()=1]",
         "status": "TBD",
         "visible": false,
         "enabled": false,
@@ -40,9 +40,61 @@
         "child": null,
         "component": null
       },
-	  {
+      {
+        "name": "usernameAfterClick",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.EditText[position()=1]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "usernameLettera",
+        "xpath": "//android.view.View[@resource-id='app']//android.widget.Image[2]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "passwordLucchetto",
+        "xpath": "//android.view.View[@resource-id='app']//android.widget.Image[3]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "passwordOcchio",
+        "xpath": "//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.Button",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
         "name": "password",
-        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=2]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
         "status": "TBD",
         "visible": false,
         "enabled": false,
@@ -53,9 +105,9 @@
         "child": null,
         "component": null
       },
-	  {
-        "name": "password2",
-        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View/android.view.View/android.view.View[2]/android.widget.EditText",
+      {
+        "name": "passwordConUsernameValorizzata",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
         "status": "TBD",
         "visible": false,
         "enabled": false,
