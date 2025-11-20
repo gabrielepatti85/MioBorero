@@ -1,7 +1,13 @@
 Feature: 1_CheckElement_in_Login_Page_ANDROID
   Scenario: 1_CheckElement_in_Login_Page_ANDROID
 
-    Given I check the "first" page
+
+	Given I "check" "xpath" with tag "//android.widget.Image[@text="SIAE"]"
+	And I "check" "xpath" with tag "//android.widget.Button[@text="Italiano"]"
+	And I "check" "xpath" with tag "//android.widget.Image[@text="Mio Bordero"]"
+	And I "check" "xpath" with tag "//android.widget.TextView[@text="Gestisci in pochi minuti i programmi musicali dei tuoi eventi"]"
+	And I "check" "xpath" with tag "//android.widget.Button[@text="Registrati"]"
+	And I "check" "xpath" with tag "//android.widget.Button[@text="Accedi"]"
     When I "click" "xpath" with tag "MioBordero.Accedi"
     #Then I check the "second" page
     Then I "check" "xpath" with tag "//android.widget.Button[@text="Torna indietro"]"
