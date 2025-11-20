@@ -16,7 +16,7 @@
     "selectors": [
       {
         "name": "Accedi",
-        "xpath": "//android.widget.Button[@text=\"Accedi\"]",
+        "xpath": "//android.widget.Button[@text='Accedi']",
         "status": "TBD",
         "visible": false,
         "enabled": false,
