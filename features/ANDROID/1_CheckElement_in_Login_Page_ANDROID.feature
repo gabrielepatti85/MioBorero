@@ -8,9 +8,10 @@ And I "check" "xpath" with tag "//android.widget.Image[@text='Mio Bordero']"
 And I "check" "xpath" with tag "//android.widget.TextView[@text='Gestisci in pochi minuti i programmi musicali dei tuoi eventi']"
 And I "check" "xpath" with tag "//android.widget.Button[@text='Registrati']"
 And I scroll down until MioBordero.Accedi is displayed
-And I click MioBordero.Accedi
-    When I "click" "xpath" with tag "MioBordero.Accedi"
-    #Then I check the "second" page
+#And I click MioBordero.Accedi
+#---------------------------------------------------------
+When I "click" "xpath" with tag "MioBordero.Accedi"
+#Then I check the "second" page
 And I "check" "xpath" with tag "//android.widget.Button[@text='Torna indietro']"
 And I "check" "xpath" with tag "//android.widget.Button[@text='Italiano']"
 And I "check" "xpath" with tag "//android.widget.TextView[@text='Accedi al portale']"
