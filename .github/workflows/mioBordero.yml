@@ -14,7 +14,7 @@ on:
       APP_PATH:
         description: "New app file"
         required: true
-        default: "app_mio_30060.apk"
+        default: "app_mio_30071.apk"
       
       FeaturesTest:
         description: "ALL or specific a single test without _ANDROID"
