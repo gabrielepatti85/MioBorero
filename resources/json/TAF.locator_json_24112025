@@ -1,0 +1,304 @@
+[
+  {
+    "_id": {
+      "$oid": "672cc19a4392bc2eb297ac6c"
+    },
+    "page_title": "MioBordero",
+    "page": "No URL",
+    "project": "Siae",
+    "capability": "Android",
+    "market": "IT",
+    "env": "PreProd",
+    "level": "",
+    "error": null,
+    "monitoring": false,
+    "monitoring_time": null,
+    "selectors": [
+      {
+        "name": "Accedi",
+        "xpath": "//android.widget.Button[@text=\"Accedi\"]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "username",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=2]//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.EditText[position()=1]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "usernameAfterClick",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.EditText[position()=1]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "usernameLettera",
+        "xpath": "//android.view.View[@resource-id='app']//android.widget.Image[2]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "passwordLucchetto",
+        "xpath": "//android.view.View[@resource-id='app']//android.widget.Image[3]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "passwordOcchio",
+        "xpath": "//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.Button",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "password",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=2]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "passwordConUsernameValorizzata",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "img_siae",
+        "xpath": "//android.widget.Image[@text='SIAE']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_italiano",
+        "xpath": "//android.widget.Button[@text='Italiano']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "img_mio_bordero",
+        "xpath": "//android.widget.Image[@text='Mio Bordero']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "lbl_gestisci_in_pochi_minuti_i_programmi_mus",
+        "xpath": "//android.widget.TextView[@text='Gestisci in pochi minuti i programmi musicali dei tuoi eventi']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_registrati",
+        "xpath": "//android.widget.Button[@text='Registrati']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_accedi",
+        "xpath": "//android.widget.Button[@text='Accedi']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "btn_torna_indietro",
+        "xpath": "//android.widget.Button[@text='Torna indietro']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_italiano",
+        "xpath": "//android.widget.Button[@text='Italiano']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "lbl_accedi_al_portale",
+        "xpath": "//android.widget.TextView[@text='Accedi al portale']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "img_mio_bordero",
+        "xpath": "//android.widget.Image[@text='Mio Bordero']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "btn_password_dimenticata",
+        "xpath": "//android.widget.Button[@text='Password dimenticata?']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "672cc2014392bc2eb297ac6d"
+    },
+    "page_title": "LocalDetailPage",
+    "page": "No URL",
+    "project": "Siae",
+    "capability": "iOS",
+    "market": "IT",
+    "env": "PreProd",
+    "level": "",
+    "error": null,
+    "monitoring": false,
+    "monitoring_time": null,
+    "selectors": [
+      {
+        "name": "backButton",
+        "xpath": "(//XCUIElementTypeImage)[1]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      }
+    ]
+  }
+]
