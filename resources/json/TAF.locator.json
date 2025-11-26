@@ -206,7 +206,7 @@
       },
 	  {
         "name": "password",
-        "xpath": "//android.view.View[@resource-id='app']//android.widget.EditText[position()=2]",
+        "xpath": "//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText",
         "status": "TBD",
         "visible": false,
         "enabled": false,
