@@ -20,7 +20,7 @@
       },
       {
         "name": "img_siae",
-        "xpath": "//android.widget.Image[@content-desc='SIAE']",
+        "xpath": "//android.widget.Image[@text='SIAE']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
@@ -46,7 +46,7 @@
       },
       {
         "name": "img_mio_bordero",
-        "xpath": "//android.widget.Image[@content-desc='Mio Bordero']",
+        "xpath": "//android.widget.Image[@text='Mio Bordero']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
