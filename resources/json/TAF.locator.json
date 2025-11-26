@@ -192,7 +192,7 @@
         "component": null
       },
       {
-        "name": "password",
+        "name": "password2",
         "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=2]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
         "status": "TBD",
         "visible": false,
@@ -205,7 +205,7 @@
         "component": null
       },
 	  {
-        "name": "password2",
+        "name": "password",
         "xpath": "//android.view.View[@resource-id='app']//android.widget.EditText[position()=2]",
         "status": "TBD",
         "visible": false,
