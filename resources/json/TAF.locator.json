@@ -204,6 +204,19 @@
         "child": null,
         "component": null
       },
+	  {
+        "name": "password2",
+        "xpath": "//android.view.View[@resource-id='app']//android.widget.EditText[position()=2]",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
       {
         "name": "passwordConUsernameValorizzata",
         "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
