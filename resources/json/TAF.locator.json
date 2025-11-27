@@ -206,13 +206,13 @@
       },
 	  {
         "name": "password",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[2]/android.widget.EditText",
         "status": "TBD",
         "visible": false,
         "enabled": false,
         "href": null,
         "image_id": null,
-        "xpath_secondary": [],
+        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText"],
         "attribute": [],
         "child": null,
         "component": null
