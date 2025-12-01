@@ -14,7 +14,7 @@ on:
       APP_PATH:
         description: "New app file"
         required: true
-        default: "app_mio_300-27.11.apk"
+        default: "mioborderò-3.0.0-1.12.apk"
       
       FeaturesTest:
         description: "ALL or specific a single test without _ANDROID"
