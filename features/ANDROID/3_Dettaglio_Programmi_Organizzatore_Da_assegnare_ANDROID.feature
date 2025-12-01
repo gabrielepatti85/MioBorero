@@ -10,4 +10,3 @@ Feature: 3_Dettaglio_Programmi_Organizzatore_Da_assegnare_ANDROID.feature
     And I check Xpath in the page
     And I "check" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]"
     And I "click" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]"
-
