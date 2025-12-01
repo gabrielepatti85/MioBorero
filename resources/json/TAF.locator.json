@@ -288,7 +288,7 @@
       },
 
       {
-        "name": "btn_button_14",
+        "name": "button_nota",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=1]/android.widget.Button[position()=2]",
         "status": "TBD",
         "visible": true,
@@ -302,7 +302,7 @@
       },
 
       {
-        "name": "btn_button_15",
+        "name": "btn_button_user",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=1]/android.widget.Button[position()=3]",
         "status": "TBD",
         "visible": true,
@@ -331,7 +331,7 @@
 
       {
         "name": "lbl_più_semplici_da_gestire",
-        "xpath": "//android.widget.TextView[@text='Più semplici da gestire,']",
+		"xpath": "//android.widget.TextView[contains(@text=\"Più semplici da gestire,\")]",
         "status": "TBD",
         "visible": true,
         "enabled": true,
@@ -358,7 +358,7 @@
       },
 
       {
-        "name": "img_image_21",
+        "name": "img_nota",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=2]/android.view.View[position()=1]/android.widget.Image[position()=1]",
         "status": "TBD",
         "visible": true,
