@@ -45,7 +45,7 @@
         "component": null
       },
 	  {
-        "name": "versione2Versione",
+        "name": "versione2",
         "xpath": "//android.widget.TextView[@text='Versione App 3.0.0']",
         "status": "TBD",
         "visible": true,
