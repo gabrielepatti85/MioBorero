@@ -33,7 +33,7 @@
       },
 	  {
         "name": "versione",
-		"xpath": "//android.widget.TextView[contains(@text='Versione')]",
+		"xpath": "//android.widget.TextView[contains(@text, 'Versione')]",
         "status": "TBD",
         "visible": true,
         "enabled": true,
