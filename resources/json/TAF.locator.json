@@ -59,7 +59,7 @@
       },
       {
         "name": "btn_italiano",
-        "xpath": "//android.widget.Button[@text='Italiano']",
+        "xpath": "//android.widget.Button[@text='IT']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
