@@ -1,0 +1,295 @@
+
+
+public void widgetButtonFunziona02122025(String action, String widgetType, String buttonLabel) {
+
+    if (widgetType.equals("Button")) widgetType = "tasto";
+    if (action.equals("click")) action = "premere";
+    if (action.equals("check")) action = "verifica";
+
+    String xpath = xpathGenerator(widgetType, buttonLabel);
+    System.out.println("🔍 Searching for: " + widgetType + " - " + buttonLabel);
+    System.out.println("🔍 Generated XPath: " + xpath);
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    boolean handled = false;
+
+    System.out.println("🔎 Verifying xpath: " + xpath);
+
+    try {
+
+        WebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+
+        if (!el.isDisplayed() || !el.isEnabled()) {
+            throw new RuntimeException("⚠️ Element visible/enabled FALSE");
+        }
+
+        if (el.getSize().getHeight() == 0 || el.getSize().getWidth() == 0) {
+            throw new RuntimeException("⚠️ Element size zero");
+        }
+
+        String clickable = el.getAttribute("clickable");
+        if (clickable != null && clickable.equalsIgnoreCase("false")) {
+            throw new RuntimeException("⚠️ Element clickable=FALSE");
+        }
+
+        Point pos = el.getLocation();
+        Dimension dim = el.getSize();
+        System.out.println("✅ Element FOUND: '" + buttonLabel + "' at " + pos + ", size: " + dim);
+
+        // ==================================================
+        // ACTION: CLICK
+        // ==================================================
+        if (action.equalsIgnoreCase("premere")) {
+
+            // hide keyboard
+            try { driver.hideKeyboard(); } catch (Exception ignored) {}
+
+            boolean clickDone = false;
+            RuntimeException lastError = null;
+
+            // --------------------------------------------------
+            // 1) CLICK STANDARD
+            // --------------------------------------------------
+            try {
+                el.click();
+                System.out.println("👉 Standard click performed");
+                if (waitForUiChange(el)) {
+                    handled = true;
+                    return;
+                }
+                System.out.println("⚠️ UI not changed after standard click");
+            } catch (Exception e) {
+                System.out.println("⚠️ Standard click failed: " + e.getMessage());
+                lastError = new RuntimeException(e);
+            }
+
+            // --------------------------------------------------
+            // 2) JS TAP FALLBACK
+            // --------------------------------------------------
+            try {
+                Map<String, Object> args = new HashMap<>();
+                args.put("elementId", ((RemoteWebElement) el).getId());
+                ((JavascriptExecutor) driver).executeScript("mobile: clickGesture", args);
+
+                System.out.println("👉 JS tap performed");
+                if (waitForUiChange(el)) {
+                    handled = true;
+                    return;
+                }
+                System.out.println("⚠️ UI not changed after JS tap");
+            } catch (Exception e) {
+                System.out.println("⚠️ JS tap failed: " + e.getMessage());
+                lastError = new RuntimeException(e);
+            }
+
+            // --------------------------------------------------
+            // 3) COORDINATE TAP FALLBACK
+            // --------------------------------------------------
+            try {
+                int x = pos.getX() + (dim.getWidth() / 2);
+                int y = pos.getY() + (dim.getHeight() / 2);
+
+                Map<String, Object> args = new HashMap<>();
+                args.put("x", x);
+                args.put("y", y);
+                args.put("duration", 100);
+                ((JavascriptExecutor) driver).executeScript("mobile: clickGesture", args);
+
+                System.out.println("👉 Coordinate TAP performed");
+
+                if (waitForUiChange(el)) {
+                    handled = true;
+                    return;
+                }
+                System.out.println("⚠️ UI not changed after coordinate TAP");
+
+            } catch (Exception e) {
+                System.out.println("⚠️ Coordinate TAP failed: " + e.getMessage());
+                lastError = new RuntimeException(e);
+            }
+
+            // --------------------------------------------------
+            // TUTTO FALLITO
+            // --------------------------------------------------
+            String msg = "❌ IMPOSSIBILE cliccare '" + buttonLabel + "' con OGNI METODO";
+            if (lastError != null) msg += " | last error: " + lastError.getMessage();
+            System.out.println(msg);
+            throw new RuntimeException(msg);
+        }
+
+        // ==================================================
+        // ACTION: VERIFY
+        // ==================================================
+        if (action.equalsIgnoreCase("verifica")) {
+            System.out.println("👍 Verified presence of '" + buttonLabel + "'");
+            handled = true;
+            return;
+        }
+
+    } catch (Exception e) {
+        System.out.println("⚠️ XPath failed: " + xpath + " -> " + e.getMessage());
+    }
+
+    // ==================================================
+    // TOTAL FAILURE
+    // ==================================================
+    if (!handled) {
+        String msg = "❌ Element '" + buttonLabel + "' of type '" + widgetType +
+                "' NOT found or NOT clickable.";
+        System.out.println(msg);
+        throw new RuntimeException(msg);
+    }
+}
+    private boolean waitForUiChange(WebElement el) {
+        try {
+            return new WebDriverWait(driver, Duration.ofSeconds(3))
+                    .until(ExpectedConditions.invisibilityOf(el));
+        } catch (Exception ignored) {
+            return false;
+        }
+    }
+
+
+
+
+
+
+public void widgetButtonNew1(String action, String widgetType, String buttonLabel) {
+
+    if (widgetType.equals("Button")) widgetType = "tasto";
+    if (action.equals("click")) action = "premere";
+    if (action.equals("check")) action = "verifica";
+
+    String xpath = xpathGenerator(widgetType, buttonLabel);
+    System.out.println("🔍 Searching for: " + widgetType + " - " + buttonLabel);
+    System.out.println("🔍 Generated XPath: " + xpath);
+
+    String[] xpaths = {
+            xpath,
+            "//android.widget.FrameLayout[@resource-id='android:id/content']//android.widget.Button[contains(@content-desc, '" + buttonLabel + "')]",
+            "//android.widget.ScrollView//android.widget.Button[contains(@content-desc, '" + buttonLabel + "')]"
+    };
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+    boolean handled = false;
+
+    for (String xp : xpaths) {
+        System.out.println("Verifying xpath: " + xp);
+        try {
+            By by = By.xpath(xp);
+            WebElement el = wait.until(ExpectedConditions.elementToBeClickable(by));
+
+            // Controllo falsi positivi
+            if (el.getSize().getHeight() == 0 || el.getSize().getWidth() == 0) {
+                System.out.println("⚠️ Element found but size is 0, skipping.");
+                continue;
+            }
+
+            System.out.println("✅ Element " + buttonLabel + " found at " + el.getLocation() + ", size: " + el.getSize());
+
+            if (action.equalsIgnoreCase("premere")) {
+                try {
+                    el.click();
+                } catch (WebDriverException e) {
+                    System.out.println("⚠️ Click failed, trying sendKeys ENTER as fallback");
+                    el.sendKeys(Keys.ENTER);  // fallback click virtuale
+                }
+                System.out.println("✅ Clicked on " + buttonLabel);
+                handled = true;
+                return;
+            } else if (action.equalsIgnoreCase("verifica")) {
+                System.out.println("✅ Verified element presence: " + buttonLabel);
+                handled = true;
+                return;
+            }
+
+        } catch (TimeoutException | NoSuchElementException | InvalidSelectorException e) {
+            System.out.println("⚠️ XPath failed: " + xp + " -> " + e.getMessage());
+        }
+    }
+
+    if (!handled) {
+        System.out.println("❌ Element " + buttonLabel + " not handled correctly by any XPath.");
+        throw new RuntimeException(
+                "Element '" + buttonLabel + "' of type '" + widgetType +
+                        "' not found or not clickable after trying " + xpaths.length + " XPath variations."
+        );
+    }
+}
+
+
+
+
+
+public void widgetButtonOldFunziona(String action, String widgetType, String buttonLabel) {
+
+
+    if (widgetType.equals("Button")) {widgetType = "tasto";}
+    if (action.equals("click")) {action = "premere";}
+    if (action.equals("check")) {action = "verifica";}
+
+    String xpath = xpathGenerator(widgetType, buttonLabel);
+    System.out.println("🔍 Searching for: " + widgetType + " - " + buttonLabel);
+    System.out.println("🔍 Generated XPath: " + xpath);
+
+    WebElement el = driver.findElement(By.xpath(xpath));
+    System.out.println("Location: " + el.getLocation() + ", Size: " + el.getSize());
+
+
+    String[] xpaths = {
+            xpath,
+            "//android.widget.FrameLayout[@resource-id='android:id/content']",
+            "//android.widget.Button[contains(@content-desc, '" + buttonLabel + "')]",
+            "//android.widget.ScrollView//android.widget.Button[contains(@content-desc, '" + buttonLabel + "')]"
+    };
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+
+    boolean clicked = false; // 👈 FLAG PER SAPERE SE SIAMO RIUSCITI A CLICCARE
+
+    for (String xpath3 : xpaths) {
+        System.out.println("Verifying xpath: " + xpath3);
+        try {
+            By widget2 = By.xpath(xpath3);
+
+            // Meglio elementToBeClickable se vuoi essere sicuro che sia cliccabile
+            wait.until(ExpectedConditions.elementToBeClickable(widget2));
+
+            System.out.println("✅ Element " + buttonLabel + " found with XPath: " + xpath3);
+
+            if (action.equalsIgnoreCase("premere")) {
+                driver.findElement(widget2).click();
+                System.out.println("✅ Clicked on " + buttonLabel);
+                clicked = true;  // 👈 segno che il click è riuscito
+                return;          // una volta cliccato esco dal metodo
+            } else if (action.equalsIgnoreCase("verifica")) {
+                // Per "verifica" basta trovarlo, non serve cliccare
+                return;
+            }
+
+        } catch (TimeoutException | NoSuchElementException | InvalidSelectorException e) {
+            System.out.println("⚠️ XPath failed: " + xpath3 + " -> " + e.getMessage());
+            // Continua con il prossimo xpath
+        }
+    }
+
+    // 👉 FUORI DAL FOR
+
+    System.out.println("❌ Element " + buttonLabel + " not handled correctly by any XPath.");
+    System.out.println("📄 Current page source (first 1000 chars):");
+    System.out.println(driver.getPageSource().substring(0, Math.min(1000, driver.getPageSource().length())));
+
+    if (action.equalsIgnoreCase("premere") && !clicked) {
+        // Non siamo riusciti a cliccare, anche se magari è stato trovato ma non cliccabile
+        throw new RuntimeException(
+                "Non è stato possibile cliccare '" + buttonLabel + "' di tipo '" + widgetType +
+                        "' dopo aver provato " + xpaths.length + " XPath."
+        );
+    } else {
+        // Caso generale: elemento mai trovato
+        throw new RuntimeException(
+                "Element '" + buttonLabel + "' of type '" + widgetType +
+                        "' not found after trying " + xpaths.length + " XPath variations"
+        );
+    }
+}

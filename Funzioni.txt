@@ -1,0 +1,102 @@
+
+02/12/2025
+questa funzione viene usata per cliccare con xpath. 
+
+    @And("I {string} {string} with tag {string} 2")
+    public void widgetButtonOld(String action, String widgetType, String buttonLabel) {
+
+
+        if (widgetType.equals("Button")) {widgetType = "tasto";}
+        if (action.equals("click")) {action = "premere";}
+        if (action.equals("check")) {action = "verifica";}
+
+        // Rimuovi la ricerca iniziale inutile e potenzialmente Stale:
+        // WebElement el = driver.findElement(By.xpath(xpath));
+
+        String xpath = xpathGenerator(widgetType, buttonLabel);
+        System.out.println("🔍 Searching for: " + widgetType + " - " + buttonLabel);
+        System.out.println("🔍 Generated XPath: " + xpath);
+
+
+        String[] xpaths = {
+                xpath,
+                "//android.widget.FrameLayout[@resource-id='android:id/content']",
+                "//android.widget.Button[contains(@content-desc, '" + buttonLabel + "')]",
+                "//android.widget.ScrollView//android.widget.Button[contains(@content-desc, '" + buttonLabel + "')]"
+        };
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(180));
+
+        boolean clicked = false; // FLAG PER SAPERE SE SIAMO RIUSCITI A CLICCARE
+
+        for (String xpath3 : xpaths) {
+            System.out.println("Verifying xpath: " + xpath3);
+            By widget2 = By.xpath(xpath3); // Definisco il By una sola volta
+
+            // Inserisco il blocco try per gestire i timeout/errori di selezione
+            try {
+
+                // --- LOGICA DI CLICK CON RETRY PER STALE ELEMENT ---
+                if (action.equalsIgnoreCase("premere")) {
+                    int maxRetries = 2; // Numero massimo di tentativi in caso di Stale
+                    int currentRetry = 0;
+
+                    while (currentRetry < maxRetries) {
+                        currentRetry++;
+                        try {
+                            // 1. Aspetta che sia cliccabile e ottieni l'istanza più recente
+                            WebElement elementToClick = wait.until(ExpectedConditions.elementToBeClickable(widget2));
+
+                            // 2. Clicca l'istanza appena trovata
+                            elementToClick.click();
+
+                            System.out.println("✅ Clicked on " + buttonLabel + " (Attempt " + currentRetry + ")");
+                            clicked = true;
+                            return; // Click riuscito, esci dal metodo
+
+                        } catch (StaleElementReferenceException e) {
+                            System.out.println("⚠️ Stale Element. Retrying... (Attempt " + currentRetry + ")");
+                            // Se l'elemento è stale, il ciclo while riprova con una nuova attesa e ricerca
+                            if (currentRetry == maxRetries) {
+                                // Se siamo all'ultimo tentativo, rilancia l'eccezione Stale
+                                throw e;
+                            }
+                        }
+                    } // Fine While
+
+                    // --- LOGICA DI VERIFICA ---
+                } else if (action.equalsIgnoreCase("verifica")) {
+                    // Per "verifica" ci assicuriamo che sia presente e visibile
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(widget2));
+                    System.out.println("✅ Element " + buttonLabel + " found with XPath: " + xpath3);
+                    return; // Verifica riuscita, esci dal metodo
+                }
+
+            } catch (TimeoutException | NoSuchElementException | InvalidSelectorException | StaleElementReferenceException e) {
+                // Qui catturiamo eccezioni non recuperabili dal retry,
+                // inclusa la StaleElementReferenceException se fallisce l'ultimo retry.
+                System.out.println("⚠️ XPath failed: " + xpath3 + " -> " + e.getMessage());
+                // Continua con il prossimo xpath nel ciclo 'for'
+            }
+        }
+
+        // 👉 FUORI DAL FOR
+
+        System.out.println("❌ Element " + buttonLabel + " not handled correctly by any XPath.");
+        System.out.println("📄 Current page source (first 1000 chars):");
+        System.out.println(driver.getPageSource().substring(0, Math.min(1000, driver.getPageSource().length())));
+
+        if (action.equalsIgnoreCase("premere") && !clicked) {
+            // Non siamo riusciti a cliccare
+            throw new RuntimeException(
+                    "Non è stato possibile cliccare '" + buttonLabel + "' di tipo '" + widgetType +
+                            "' dopo aver provato " + xpaths.length + " XPath."
+            );
+        } else {
+            // Caso generale: elemento mai trovato/verificato
+            throw new RuntimeException(
+                    "Element '" + buttonLabel + "' of type '" + widgetType +
+                            "' not found after trying " + xpaths.length + " XPath variations"
+            );
+        }
+    }
