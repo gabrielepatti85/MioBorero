@@ -31,6 +31,32 @@
         "child": null,
         "component": null
       },
+	  {
+        "name": "versione",
+		"xpath": "//android.widget.TextView[contains(@text='Versione')]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  {
+        "name": "versione2Versione",
+        "xpath": "//android.widget.TextView[@text='Versione App 3.0.0']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
       {
         "name": "btn_italiano",
         "xpath": "//android.widget.Button[@text='Italiano']",
