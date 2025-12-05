@@ -20,7 +20,7 @@
       },
       {
         "name": "img_siae",
-        "xpath": "//android.widget.Image[@content-desc='SIAE']",
+        "xpath": "//android.widget.Image[@text='SIAE']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
