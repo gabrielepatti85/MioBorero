@@ -128,7 +128,7 @@
       },
       {
         "name": "btn_torna_indietro",
-        "xpath": "//android.widget.Button[@content-desc='Torna indietro']",
+        "xpath": "//android.widget.Button[@text='Torna indietro']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
