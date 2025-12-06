@@ -9,3 +9,5 @@ Feature: 2_Login_Page_ANDROID
 	And I check Xpath in the page
 	And I check the "second" page
     Then inserisci il nome utente "organizzatoreprogrammimusicali@gmail.com" la password "Organizzatore_1"
+	And I scroll down until "MioBorderoLogin.Accedi" is displayed
+	And I "click" "xpath" with tag "MioBorderoLogin.Accedi" 6
