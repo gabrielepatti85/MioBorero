@@ -1,5 +1,5 @@
-Feature: 4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
-  Scenario: 4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
+Feature: 3_0_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
+  Scenario: 3_0_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
 
     Given I check Xpath in the page
 	#Then I check the "first" page
