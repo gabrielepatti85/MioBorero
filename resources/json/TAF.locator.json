@@ -85,7 +85,7 @@
       },
       {
         "name": "lbl_gestisci_in_pochi_minuti_i_programmi_mus",
-        "xpath": "//android.widget.TextView[@text='Gestisci in pochi minuti i programmi musicali dei tuoi eventi']",
+        "xpath": "//android.widget.TextView[@text='Gestisci in pochi minuti i borderò dei tuoi eventi']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
