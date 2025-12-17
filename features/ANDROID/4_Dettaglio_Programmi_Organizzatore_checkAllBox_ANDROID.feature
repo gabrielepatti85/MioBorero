@@ -1,5 +1,5 @@
-Feature: 3_0_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
-  Scenario: 3_0_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
+Feature: 4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
+  Scenario: 4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
 
     Given I check Xpath in the page
 	#Then I check the "first" page
@@ -33,13 +33,3 @@ Feature: 3_0_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
       And I "click" "xpath" with tag "//android.widget.Button[@text='Mio Borderò']" new
 
     #_------------------------------------------------------------------
-    #And I "check" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]" new
-    #And I "click" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]" new
-    #And I "click" "xpath" with tag "//android.widget.Button[@text='Seleziona']" new
-    #And I "check" "xpath" with tag "//android.widget.TextView[@text='Selezione multipla']" new
-    #And I "check" "xpath" with tag "//android.widget.TextView[@text='Seleziona tutti i programmi musicali']" new
-    #And I "check" "xpath" with tag "//android.widget.TextView[@text='Seleziona tutti i programmi musicali']/..//android.widget.CheckBox" new
-    #And I "click" "xpath" with tag "//android.widget.TextView[@text='Seleziona tutti i programmi musicali']/..//android.widget.CheckBox" new
-    #And I "click" "xpath" with tag "//android.widget.TextView[@text='Seleziona tutti i programmi musicali']/..//android.widget.CheckBox" new
-    #And I "click" "xpath" with tag "//android.view.View[@resource-id='app]/android.view.View[2]/android.view.View[2]/android.view.View[1]" new
-    #And I "click" "xpath" with tag "//android.widget.TextView[@text='ALBERGO 1 STELLA']/..//android.widget.Button" new
