@@ -339,6 +339,7 @@
         "child": null,
         "component": null
       },
+	  {
         "name": "btn_button_campanella",
         "xpath": "//*[@resource-id='app']//android.view.View//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.Button[position()=2]",
         "status": "TBD",
@@ -352,7 +353,7 @@
         "component": null
       },
 
-     
+	  {
         "name": "btn_button_user",
         "xpath_secondary": ["//*[@resource-id='app']//android.view.View//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.Button[position()=3]"],
         "xpath": "//android.view.View[@resource-id='app']//android.widget.Button[position()=2]",
