@@ -339,28 +339,16 @@
         "child": null,
         "component": null
       },
-        "name": "btn_button_campanella",
-        "xpath": "//*[@resource-id='app']//android.view.View//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.Button[position()=2]",
+
+      {
+        "name": "btn_button_user",
+        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=1]/android.widget.Button[position()=3]",
         "status": "TBD",
         "visible": true,
         "enabled": true,
         "href": null,
         "image_id": null,
         "xpath_secondary": [],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
-
-     
-        "name": "btn_button_user",
-        "xpath_secondary": ["//*[@resource-id='app']//android.view.View//android.view.View[position()=1]//android.view.View[position()=1]//android.widget.Button[position()=3]"],
-        "xpath": "//android.view.View[@resource-id='app']//android.widget.Button[position()=2]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "image_id": null,
         "attribute": [],
         "child": null,
         "component": null
@@ -382,7 +370,7 @@
 
       {
         "name": "lbl_più_semplici_da_gestire",
-        "xpath": "//android.widget.TextView[@text='Più semplici da gestire,']",
+		"xpath": "//android.widget.TextView[contains(@text=\"Più semplici da gestire,\")]",
         "status": "TBD",
         "visible": true,
         "enabled": true,
@@ -416,13 +404,25 @@
         "enabled": true,
         "href": null,
         "image_id": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']//android.widget.Image[position()=1]"],
+        "xpath_secondary": [],
         "attribute": [],
         "child": null,
         "component": null
       },
 
-      
+      {
+        "name": "lbl_333",
+        "xpath": "//android.widget.TextView[@text='333']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
 
       {
         "name": "lbl_da_assegnare",
@@ -451,19 +451,7 @@
         "child": null,
         "component": null
       },
-{
-        "name": "frecciaDaAssegnare",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=2]/android.view.View[position()=1]/android.widget.Image[position()=2]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "image_id": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]","//android.view.View[@resource-id='app']//android.widget.Image[position()=2]","//android.view.View[@resource-id=\"app\"]/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]"],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
+
       {
         "name": "img_image_26",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=1]",
@@ -477,19 +465,7 @@
         "child": null,
         "component": null
       },
-{
-        "name": "img_checkBox",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=1]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "image_id": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']//android.widget.Image[position()=3]"],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
+
       {
         "name": "lbl_0",
         "xpath": "//android.widget.TextView[@text='0']",
@@ -531,19 +507,7 @@
         "child": null,
         "component": null
       },
- {
-        "name": "frecciaDaInviare",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=2]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "image_id": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.Image[2]","//android.view.View[@resource-id='app']//android.widget.Image[position()=4]","//android.view.View[@resource-id=\"app\"]/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.Image[2]"],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
+
       {
         "name": "lbl_la_tua_attività",
         "xpath": "//android.widget.TextView[@text='La tua attività']",
@@ -599,28 +563,16 @@
         "child": null,
         "component": null
       },
- {
-        "name": "frecciaAssegnati",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=2]/android.view.View[position()=1]/android.widget.Image[position()=1]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "image_id": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View[2]/android.view.View[1]/android.widget.Image","//android.view.View[@resource-id='app']//android.widget.Image[position()=5]","//android.view.View[@resource-id=\"app\"]/android.view.View/android.view.View[2]/android.view.View[1]/android.widget.Image"],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
+
       {
-        "name": "frecciaInviati",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=1]",
+        "name": "lbl_143",
+        "xpath": "//android.widget.TextView[@text='143']",
         "status": "TBD",
         "visible": true,
         "enabled": true,
         "href": null,
         "image_id": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View[2]/android.view.View[2]/android.widget.Image","//android.view.View[@resource-id='app']//android.widget.Image[position()=6]","//android.view.View[@resource-id=\"app\"]/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Image"],
+        "xpath_secondary": [],
         "attribute": [],
         "child": null,
         "component": null
