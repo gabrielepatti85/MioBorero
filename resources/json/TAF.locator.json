@@ -127,6 +127,20 @@
         "xpath": "------------------------------------------------------------------"
       },
       {
+        "name": "Ricordami",
+        "xpath": "//android.view.View[@text='Ricordami per i prossimi accessi']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+	  {
         "name": "btn_torna_indietro",
         "xpath": "//android.widget.Button[@text='Torna indietro']",
         "status": "TBD",
@@ -325,6 +339,22 @@
         "child": null,
         "component": null
       },
+	  
+	  {
+        "name": "freccia",
+        "xpath": "//android.widget.TextView[@text='Da assegnare']/following::android.widget.Image[1]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  
+	  
 
       {
         "name": "button_nota",
