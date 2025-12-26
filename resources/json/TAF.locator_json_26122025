@@ -244,19 +244,6 @@
         "child": null,
         "component": null
       },
-	  {
-        "name": "password",
-        "xpath": "//android.view.View[@resource-id='app']//android.view.View[2]/android.widget.EditText",
-        "status": "TBD",
-        "visible": false,
-        "enabled": false,
-        "href": null,
-        "UiSelector": null,
-        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText"],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
       {
         "name": "password2",
         "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=2]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
@@ -270,7 +257,19 @@
         "child": null,
         "component": null
       },
-	  
+	  {
+        "name": "password",
+        "xpath": "//android.view.View[@resource-id='app']//android.view.View[2]/android.widget.EditText",
+        "status": "TBD",
+        "visible": false,
+        "enabled": false,
+        "href": null,
+        "UiSelector": null,
+        "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.EditText"],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
       {
         "name": "passwordConUsernameValorizzata",
         "xpath": "//android.view.View[@resource-id='app']//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=1]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
@@ -334,12 +333,29 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "//android.widget.Button[@text=\"Mio Borderò\"]",
+        "UiSelector": null,
         "xpath_secondary": [],
         "attribute": [],
         "child": null,
         "component": null
       },
+	  
+	  {
+        "name": "freccia",
+        "xpath": "//android.widget.TextView[@text='Da assegnare']/following::android.widget.Image[1]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  
+	  
+
       {
         "name": "button_nota",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=1]/android.widget.Button[position()=2]",
@@ -347,7 +363,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().className('android.widget.Image').instance(0)",
+        "UiSelector": null,
         "xpath_secondary": [],
         "attribute": [],
         "child": null,
@@ -375,7 +391,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().className(\"android.widget.Button\").instance(1)",
+        "UiSelector": null,
         "attribute": [],
         "child": null,
         "component": null
@@ -388,7 +404,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().text(\"I tuoi borderò\")",
+        "UiSelector": null,
         "xpath_secondary": [],
         "attribute": [],
         "child": null,
@@ -402,7 +418,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().text(\"Più semplici da gestire,\")",
+        "UiSelector": null,
         "xpath_secondary": [],
         "attribute": [],
         "child": null,
@@ -416,7 +432,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().text(\"più tempo per i tuoi eventi.\")",
+        "UiSelector": null,
         "xpath_secondary": [],
         "attribute": [],
         "child": null,
@@ -430,7 +446,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().className(\"android.widget.Image\").instance(0)",
+        "UiSelector": null,
         "xpath_secondary": ["//android.view.View[@resource-id='app']//android.widget.Image[position()=1]"],
         "attribute": [],
         "child": null,
@@ -499,7 +515,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().className(\"android.view.View\").instance(6)",
+        "UiSelector": null,
         "xpath_secondary": ["//android.view.View[@resource-id='app']//android.widget.Image[position()=3]"],
         "attribute": [],
         "child": null,
@@ -627,32 +643,6 @@
         "child": null,
         "component": null
       },
-{
-        "name": "lbl_inviati",
-        "xpath": "//android.widget.TextView[@text=\"Inviati a SIAE\"]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "UiSelector": "new UiSelector().text(\"Inviati a SIAE\")",
-        "xpath_secondary": [],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
-{
-        "name": "img_image_39",
-        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=1]",
-        "status": "TBD",
-        "visible": true,
-        "enabled": true,
-        "href": null,
-        "UiSelector": null,
-        "xpath_secondary": [],
-        "attribute": [],
-        "child": null,
-        "component": null
-      },
       {
         "name": "frecciaInviati",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=1]",
@@ -665,11 +655,35 @@
         "attribute": [],
         "child": null,
         "component": null
+      },
+
+      {
+        "name": "lbl_inviati",
+        "xpath": "//android.widget.TextView[@text='Inviati']",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "img_image_39",
+        "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=2]/android.view.View[position()=2]/android.widget.Image[position()=1]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
       }
-
-      
-
-      
     ]
   },
   {
