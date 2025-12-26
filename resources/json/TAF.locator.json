@@ -489,7 +489,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "image_id": null,
+        "UiSelector": "new UiSelector().className(\"android.widget.Image\").instance(1)",
         "xpath_secondary": ["//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]","//android.view.View[@resource-id='app']//android.widget.Image[position()=2]","//android.view.View[@resource-id=\"app\"]/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]"],
         "attribute": [],
         "child": null,
