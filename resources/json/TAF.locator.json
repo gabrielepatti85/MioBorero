@@ -139,7 +139,19 @@
         "child": null,
         "component": null
       },
-
+	  {
+        "name": "checkBoxSecondaPagina",
+        "xpath": "//android.widget.CheckBox[@content-desc=\"Ricordami per i prossimi accessi\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().resourceId(\"v-2\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
 	  {
         "name": "btn_torna_indietro",
         "xpath": "//android.widget.Button[@text='Torna indietro']",
