@@ -352,6 +352,32 @@
         "child": null,
         "component": null
       },
+	   {
+        "name": "btn_borderò",
+        "xpath": "//android.widget.TextView[@text=\"Borderò\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Borderò\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  {
+        "name": "btn_Filtri",
+        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[1]/android.view.View[2]/android.widget.Button",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().className(\"android.widget.Button\").instance(2)",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
       {
         "name": "button_nota",
         "xpath": "//android.view.View[@resource-id='app']/android.view.View[position()=1]/android.view.View[position()=1]/android.widget.Button[position()=2]",
@@ -448,9 +474,97 @@
         "child": null,
         "component": null
       },
-
-      
-
+{
+        "name": "ToggleButton_da_assegnare",
+        "xpath": "//android.widget.ToggleButton[@text=\"Da assegnare\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Da assegnare\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+{
+        "name": "ToggleButton_da_inviare",
+        "xpath": "//android.widget.ToggleButton[@text=\"Da inviare a SIAE\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Da inviare a SIAE\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "ToggleButton_Assegnati",
+        "xpath": "//android.widget.ToggleButton[@text=\"Assegnati\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Assegnati\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+ {
+        "name": "ToggleButton_Inviati",
+        "xpath": "//android.widget.ToggleButton[@text=\"Inviati a SIAE\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Inviati a SIAE\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	   {
+        "name": "lbl_selezione_borderò",
+        "xpath": "//android.widget.TextView[@text=\"Seleziona uno o più borderò\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Seleziona uno o più borderò\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  {
+        "name": "lbl_calendario",
+        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[2]/android.view.View[1]/android.widget.Button",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().className(\"android.widget.Button\").instance(3)",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  {
+        "name": "blocco7",
+        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[2]/android.view.View[2]/android.view.View[1]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().className(\"android.view.View\").instance(7)",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
       {
         "name": "lbl_da_assegnare",
         "xpath": "//android.widget.TextView[@text='Da assegnare']",
@@ -677,8 +791,294 @@
         "attribute": [],
         "child": null,
         "component": null
-      }
+      },
+,
+      {
+        "name": "filtraPage",
+        "xpath": "------------------------------------------------------------------"
+      },
+      {
+        "name": "lbl_filtra",
+        "xpath": "//android.widget.TextView[@text='Filtra']",
+        "UiSelector": "new UiSelector().text(\"Filtra\").className(\"android.widget.TextView\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
 
+      {
+        "name": "lbl_n_borderò",
+        "xpath": "//android.widget.TextView[@text='N° borderò']",
+        "UiSelector": "new UiSelector().text(\"N° borderò\").className(\"android.widget.TextView\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "img_lente_filtri",
+        "xpath": "//*[@resource-id='reka-dialog-content-v-87']//android.app.AlertDialog//android.widget.Image[position()=1]",
+        "UiSelector": "new UiSelector().className(\"android.widget.Image\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "et_cerca_n_borderò",
+        "xpath": "//android.widget.EditText[@text='Cerca n° borderò']",
+        "UiSelector": "new UiSelector().text(\"Cerca n° borderò\").className(\"android.widget.EditText\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "lbl_data",
+        "xpath": "//android.widget.TextView[@text='Data']",
+        "UiSelector": "new UiSelector().text(\"Data\").className(\"android.widget.TextView\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_seleziona_data",
+        "xpath": "//android.widget.Button[@text='Seleziona data']",
+        "UiSelector": "new UiSelector().text(\"Seleziona data\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "lbl_artistagruppo",
+        "xpath": "//android.widget.TextView[@text='Artista/Gruppo']",
+        "UiSelector": "new UiSelector().text(\"Artista/Gruppo\").className(\"android.widget.TextView\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_principale",
+        "xpath": "//android.widget.Button[@text='Principale']",
+        "UiSelector": "new UiSelector().text(\"Principale\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_spalla",
+        "xpath": "//android.widget.Button[@text='Spalla']",
+        "UiSelector": "new UiSelector().text(\"Spalla\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "lbl_stato",
+        "xpath": "//android.widget.TextView[@text='Stato']",
+        "UiSelector": "new UiSelector().text(\"Stato\").className(\"android.widget.TextView\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_da_assegnare",
+        "xpath": "//android.widget.Button[@text='Da assegnare']",
+        "UiSelector": "new UiSelector().text(\"Da assegnare\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "lbl_tipologia",
+        "xpath": "//android.widget.TextView[@text='Tipologia']",
+        "UiSelector": "new UiSelector().text(\"Tipologia\").className(\"android.widget.TextView\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_107c",
+        "xpath": "//android.widget.Button[@text='107/C']",
+        "UiSelector": "new UiSelector().text(\"107/C\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_107or",
+        "xpath": "//android.widget.Button[@text='107/OR']",
+        "UiSelector": "new UiSelector().text(\"107/OR\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_107sm",
+        "xpath": "//android.widget.Button[@text='107/SM']",
+        "UiSelector": "new UiSelector().text(\"107/SM\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_azzera",
+        "xpath": "//android.widget.Button[@text='Azzera']",
+        "UiSelector": "new UiSelector().text(\"Azzera\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+
+      {
+        "name": "btn_applica",
+        "xpath": "//android.widget.Button[@text='Applica']",
+        "UiSelector": "new UiSelector().text(\"Applica\").className(\"android.widget.Button\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  {
+        "name": "btn_16",
+        "xpath": "//android.widget.Button[@content-desc=\"Tuesday, December 16, 2025\"]",
+        "UiSelector": "new UiSelector().descriptionContains(\"16\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+      {
+        "name": "btn_17",
+        "xpath": "//android.widget.Button[@content-desc=\"Wednesday, December 17, 2025\"]",
+        "UiSelector": "new UiSelector().descriptionContains(\"17\")",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      }
       
 
       
