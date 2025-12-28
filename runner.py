@@ -14,7 +14,24 @@ print(f"Using .m2 folder {m2_dir}")
 # platform = "BS_ANDROID"
 platform = "BS_" + os.environ["MOBILE_OS"].upper()
 
-if os.environ["FeaturesTest"] == "ALL":
+if os.environ["FeaturesTest"] == "ALL_KO":
+    features_android = [
+        "1_CheckElement_in_First_Page_ANDROID",
+        "2_CheckElement_in_Second_Login_Page_ANDROID",
+        "5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID"
+    ]
+
+elif os.environ["FeaturesTest"] == "ALL_OK":
+    features_android = [
+        "3_CheckElement_in_Third_ANDROID",
+        "4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID",
+        "5_0_1_Dettaglio_Programmi_Organizzatore_DaAssegnare_CheckElement_Filtri_ANDROID",
+        "5_0_2_Dettaglio_Programmi_Organizzatore_DaAssegnare_CheckElement_Uso_dei_Filtri_ANDROID",
+        "5_1_Dettaglio_Programmi_Organizzatore_DaAssegnare_ANDROID",
+        "5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID",
+        "5_3_Dettaglio_Programmi_Organizzatore_Assegnati_ANDROID"
+    ]
+elif os.environ["FeaturesTest"] == "ALL":
     features_android = [
         "1_CheckElement_in_First_Page_ANDROID",
         "2_CheckElement_in_Second_Login_Page_ANDROID",
@@ -26,46 +43,6 @@ if os.environ["FeaturesTest"] == "ALL":
         "5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID",
         "5_3_Dettaglio_Programmi_Organizzatore_Assegnati_ANDROID",
         "5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID"
-    ]
-
-elif os.environ["FeaturesTest"] == "ALLVersione130_noRouth":
-    features_android = [
-        "3_3_0_Vigilanze_Censiti_Main_1300001_ANDROID",
-        "3_3_1_Vigilanze_Censiti_chiusoTemp_timeTableIcon_1300001_ANDROID",
-        "3_3_2_Vigilanze_Censiti_chiusoDef_lockerIcon_1300001_ANDROID",
-        "3_3_3_Vigilanze_Censiti_appDismessi_devicesIcon_1300001_ANDROID",
-        "3_3_4_Vigilanze_Censiti_musicNonInRipr_musicIcon_Mda_1300001_ANDROID",
-        "3_3_5_Vigilanze_Censiti_repEseguito_shieldIcon_1300001_ANDROID",
-        "3_3_6_Vigilanze_Censiti_abbPagato_euroIcon_Mda_1300001_ANDROID",
-        "9_1_Sound_Check_2_After_Search_button_ANDROID",
-        "9_2_Sound_Check_3_After_Search_button_Relazione_PersonaFisica_Mda_ANDROID"
-    ]
-
-elif os.environ["FeaturesTest"] == "ALLVer130_cap2_OK":
-    features_android = [
-        "2_1_First_Page_check_buttons_ANDROID",
-        "2_3_1_1_First_Page_search_Button_without_GPS_Censiti_ANDROID",
-        "2_3_1_2_First_Page_search_Button_without_GPS_Prospect_ANDROID",
-        "2_3_2_1_First_Page_search_Button_with_GPS_ANDROID",
-        "2_3_2_2_First_Page_search_Button_with_GPS_and_input_street_ANDROID",
-        "2_4_0_First_Page_Menu_Button_ANDROID",
-        "2_4_1_Menu_Profile_ANDROID",
-        "2_4_3_Menu_updateCache_ANDROID",
-        "2_4_4_Menu_Feedback_Icon_ANDROID",
-        "2_4_5_Menu_dailyActivityLog_ANDROID",
-        "2_4_6_Menu_ChatBot_ANDROID",
-        "2_6_1_First_Page_RequestRoute_RealTime2_ANDROID",
-        "2_6_3_First_Page_RequestRoute_Planned3_withoutcheck_path_ANDROID"
-    ]
-elif os.environ["FeaturesTest"] == "ALLVer130_cap2_KO":
-    features_android = [
-        #devono spuntare i percorsi
-        "2_6_2_First_Page_RequestRoute_Planned_check_path_ANDROID",
-        #bisogna avere la prima pagina popolata
-        "2_5_1_First_Page_General_Filters_ANDROID",
-        "2_5_2_First_Page_General_Filters_MDA_ANDROID",
-        "2_5_3_First_Page_General_Filters_SKY_ANDROID",
-        "2_5_4_First_Page_General_Filters_EVENT_ANDROID"
     ]
 else:
     features_android = []

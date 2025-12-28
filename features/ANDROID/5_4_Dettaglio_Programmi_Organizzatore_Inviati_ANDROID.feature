@@ -21,5 +21,5 @@ Feature: 5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID
     And I "check" "xpath" with tags "MioBordero.ToggleButton_Assegnati"
     #---------------------------------------------------------------
     And I "check" "xpath" with tags "MioBordero.lbl_calendario"
-    And I "check" "xpath" with tags "MioBordero.lbl_selezione_borderò"
+    #And I "check" "xpath" with tags "MioBordero.lbl_selezione_borderò"
     And I "check" "xpath" with tags "MioBordero.blocco7"

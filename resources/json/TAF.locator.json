@@ -146,7 +146,7 @@
         "visible": true,
         "enabled": true,
         "href": null,
-        "UiSelector": "new UiSelector().resourceId(\"v-2\")",
+        "UiSelector": "new UiSelector().resourceId(\"v-1\")",
         "xpath_secondary": [],
         "attribute": [],
         "child": null,
