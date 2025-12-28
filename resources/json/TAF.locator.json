@@ -114,6 +114,19 @@
         "xpath": "------------------------------------------------------------------"
       },
 	  {
+        "name": "CredenzialiNonCorrette",
+        "xpath": "//android.widget.TextView[@text=\"Credenziali non corrette\"]",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "UiSelector": "new UiSelector().text(\"Credenziali non corrette\")",
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  {
         "name": "AccediAMioBorderò",
         "xpath": "//android.widget.TextView[@text=\"Accedi a mioBorderò\"]",
         "status": "TBD",

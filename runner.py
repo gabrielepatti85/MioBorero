@@ -17,7 +17,9 @@ platform = "BS_" + os.environ["MOBILE_OS"].upper()
 if os.environ["FeaturesTest"] == "ALL_KO":
     features_android = [
         "1_CheckElement_in_First_Page_ANDROID",
-        "2_CheckElement_in_Second_Login_Page_ANDROID",
+        "2_0_CheckElement_in_Second_Login_Page_ANDROID",
+        "2_1_WrongUserName_in_Second_Login_Page_ANDROID",
+        "2_2_WrongPassword_in_Second_Login_Page_ANDROID",
         "5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID"
     ]
 
@@ -34,7 +36,9 @@ elif os.environ["FeaturesTest"] == "ALL_OK":
 elif os.environ["FeaturesTest"] == "ALL":
     features_android = [
         "1_CheckElement_in_First_Page_ANDROID",
-        "2_CheckElement_in_Second_Login_Page_ANDROID",
+        "2_0_CheckElement_in_Second_Login_Page_ANDROID",
+        "2_1_WrongUserName_in_Second_Login_Page_ANDROID",
+        "2_2_WrongPassword_in_Second_Login_Page_ANDROID",
         "3_CheckElement_in_Third_ANDROID",
         "4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID",
         "5_0_1_Dettaglio_Programmi_Organizzatore_DaAssegnare_CheckElement_Filtri_ANDROID",
