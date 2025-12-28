@@ -18,7 +18,12 @@ if os.environ["FeaturesTest"] == "ALL":
     features_android = [
         "1_CheckElement_in_First_Page_ANDROID",
         "2_CheckElement_in_Second_Login_Page_ANDROID",
-        "3_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID"
+        "3_CheckElement_in_Third_ANDROID",
+        "4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID",
+        "5_1_Dettaglio_Programmi_Organizzatore_DaAssegnare_ANDROID",
+        "5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID",
+        "5_3_Dettaglio_Programmi_Organizzatore_Assegnati_ANDROID",
+        "5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID"
         
     ]
 

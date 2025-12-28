@@ -13,23 +13,15 @@ Feature: 4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID
 	And I scroll down until "MioBorderoLogin.Accedi" is displayed
 	And I "click" "xpath" with tag "MioBorderoLogin.Accedi" 6
 	#------------------3 page-------------------------------------------#
-    And I check Xpath in the page
-    #And I "click" "xpath" with tag "//android.view.View[@resource-id='app']//android.widget.Image[1]"
-    And I "check" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]" new
-    And I "click" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Image[2]" new
-      #And I check Xpath in the page
-      And I "click" "xpath" with tag "//android.widget.Button[@text='Mio Borderò']" new
-    And I "check" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.Image[2]" new
-    And I "click" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[1]/android.view.View[2]/android.view.View/android.view.View[2]/android.widget.Image[2]" new
-      #And I check Xpath in the page
-      And I "click" "xpath" with tag "//android.widget.Button[@text='Mio Borderò']" new
-    And I "check" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[2]/android.view.View[1]/android.widget.Image" new
-    And I "click" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[2]/android.view.View[1]/android.widget.Image" new
-      #And I check Xpath in the page
-      And I "click" "xpath" with tag "//android.widget.Button[@text='Mio Borderò']" new
-    And I "check" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[2]/android.view.View[2]/android.widget.Image" new
-    And I "click" "xpath" with tag "//android.view.View[@resource-id='app']/android.view.View[2]/android.view.View[2]/android.widget.Image" new
-      #And I check Xpath in the page
-      And I "click" "xpath" with tag "//android.widget.Button[@text='Mio Borderò']" new
-
+	And I "click" "xpath" with tags "MioBordero.frecciaInviati"
+	And I "click" "xpath" with tags "MioBordero.btn_mio_borderò"
+	
+	And I "click" "xpath" with tags "MioBordero.frecciaAssegnati"
+	And I "click" "xpath" with tags "MioBordero.btn_mio_borderò"
+	
+	And I "click" "xpath" with tags "MioBordero.frecciaDaInviare"
+	And I "click" "xpath" with tags "MioBordero.btn_mio_borderò"
+	
+	And I "click" "xpath" with tags "MioBordero.frecciaDaAssegnare"
+	And I "click" "xpath" with tags "MioBordero.btn_mio_borderò"
     #_------------------------------------------------------------------

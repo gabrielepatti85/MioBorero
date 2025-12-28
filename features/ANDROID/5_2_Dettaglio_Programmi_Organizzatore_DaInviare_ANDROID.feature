@@ -1,5 +1,5 @@
-Feature: 5_Dettaglio_Programmi_Organizzatore_DaAssegnare_ANDROID
-  Scenario: 5_Dettaglio_Programmi_Organizzatore_DaAssegnare_ANDROID
+Feature: 5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID
+  Scenario: 5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID
 
     Given I check Xpath in the page
 	#Then I scroll down until "//android.widget.TextView[@text='Versione App 3.0.0']" is displayed
@@ -9,4 +9,4 @@ Feature: 5_Dettaglio_Programmi_Organizzatore_DaAssegnare_ANDROID
 	And I scroll down until "MioBorderoLogin.Accedi" is displayed
 	Then I "click" "xpath" with tag "MioBorderoLogin.Accedi" 6
 	#------------------3 page-------------------------------------------#
-	And I "click" "xpath" with tags "MioBordero.frecciaDaAssegnare"
+	And I "click" "xpath" with tags "MioBordero.frecciaDaInviare"
