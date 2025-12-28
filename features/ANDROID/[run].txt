@@ -1,0 +1,14 @@
+28/12/2025
+https://app-automate.browserstack.com/projects/MioBorero/builds/workflow_dispatch+Workflow:/90?tab=tests&testListView=spec&details=2564215010
+
+Untitled Test 28-Dec-2025 14:50 UTC - ae0440cd8557913f7039301b8c9b056ab207d8a6
+2_CheckElement_in_Second_Login_Page_ANDROID - 2m 21s
+java.lang.RuntimeException: Nessun selettore trovato nel JSON per: MioBorderoLogin.checkBoxSecondaPagina at test.steps.LoginSteps.widgetButtongemini(LoginSteps.java:1411) at test.steps.GeneralStep.iCheckTheLoginPage(GeneralStep.java:1485) at .I che
+3_CheckElement_in_Third_ANDROID - 3m 44s
+4_Dettaglio_Programmi_Organizzatore_checkAllBox_ANDROID - 3m 36s
+5_1_Dettaglio_Programmi_Organizzatore_DaAssegnare_ANDROID - 3m 22s
+5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID - 3m 19s
+5_3_Dettaglio_Programmi_Organizzatore_Assegnati_ANDROID - 3m 19s
+5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID - 3m 20s
+
+

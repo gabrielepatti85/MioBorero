@@ -24,7 +24,6 @@ if os.environ["FeaturesTest"] == "ALL":
         "5_2_Dettaglio_Programmi_Organizzatore_DaInviare_ANDROID",
         "5_3_Dettaglio_Programmi_Organizzatore_Assegnati_ANDROID",
         "5_4_Dettaglio_Programmi_Organizzatore_Inviati_ANDROID"
-        
     ]
 
 elif os.environ["FeaturesTest"] == "ALLVersione130_noRouth":
