@@ -9,4 +9,4 @@ Feature: 2_1_WrongUserName_in_Second_Login_Page_ANDROID
 	#And I check the "second" page
     And inserisci il nome utente "Organizzatoreprogrammimusicali@gmail.com" la password "Organizzatore_1"
 	And I scroll down until "MioBorderoLogin.Accedi" is displayed
-	And I "check" "xpath" with tags "MioBordero.CredenzialiNonCorrette"
+	And I "check" "xpath" with tags "MioBorderoLogin.CredenzialiNonCorrette"
