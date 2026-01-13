@@ -494,6 +494,7 @@
         "child": null,
         "component": null
       },
+	  {
         "name": "et_nazione_di_nascita",
         "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[2]/android.view.View[5]/android.widget.EditText",
         "UiSelector": "new UiSelector().className(\"android.widget.EditText\").instance(3)",
