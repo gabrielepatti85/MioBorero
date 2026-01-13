@@ -269,7 +269,7 @@
       {
         "name": "btn_button_privato",
         "xpath": "//android.widget.RadioButton[@content-desc=\"Privato\"]",
-        "UiSelector": "new UiSelector().resourceIdMatches(\".*PRIVATO.*\"",
+        "UiSelector": "new UiSelector().resourceIdMatches(\".*PRIVATO.*\")",
         "status": "TBD",
         "visible": true,
         "enabled": true,
@@ -283,7 +283,7 @@
       {
         "name": "btn_button_business",
         "xpath": "//android.widget.RadioButton[@content-desc=\"Business\"]",
-        "UiSelector": "new UiSelector().resourceIdMatches(\".*BUSINESS.*\"",
+        "UiSelector": "new UiSelector().resourceIdMatches(\".*BUSINESS.*\")",
         "status": "TBD",
         "visible": true,
         "enabled": true,
