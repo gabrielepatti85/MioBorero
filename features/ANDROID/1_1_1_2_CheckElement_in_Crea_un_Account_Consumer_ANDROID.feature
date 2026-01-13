@@ -1,5 +1,5 @@
-Feature: 1_1_0_CheckElement_in_Crea_un_Account_Consumer_annulla_ANDROID
-  Scenario: 1_1_0_CheckElement_in_Crea_un_Account_Consumer_annulla_ANDROID
+Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
+  Scenario: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
 
     Given I check Xpath in the page
 	When I "click" "xpath" with tags "MioBorderoLogin.btn_creaAccount"
@@ -15,7 +15,8 @@ Feature: 1_1_0_CheckElement_in_Crea_un_Account_Consumer_annulla_ANDROID
     And I close the keyboard
     #Then I check the "creaAccountPrivatoFirstPart" page
     #And I check the "creaAccountPrivatoSecondPart" page
-    And I scrollDownToElementAndCenter until "xpath" with tag "MioBorderoLogin.flag_lettura_2"  is displayed
+	And I scroll down until "MioBorderoLogin.flag_lettura_2" is displayed
+    #And I scrollDownToElementAndCenter until "xpath" with tag "MioBorderoLogin.flag_lettura_2"  is displayed
     #And I "insert" "xpath" with tags "MioBorderoLogin.et_data_di_nascita" the value "10/03/1985"
     #And I close the keyboard
     And I "insert" "xpath" with tag "MioBorderoLogin.comune" and text "Catania"
