@@ -422,7 +422,7 @@
 
       {
         "name": "et_edittext_CF",
-        "xpath": "//*[@resource-id='app']//android.view.View//android.view.View[position()=2]//android.view.View[position()=3]//android.widget.EditText[position()=1]",
+        "xpath": "//android.view.View[@resource-id=\"app\"]/android.view.View[2]/android.view.View[3]/android.widget.EditText",
         "UiSelector": "new UiSelector().className(\"android.widget.EditText\").instance(2)",
         "status": "TBD",
         "visible": true,
