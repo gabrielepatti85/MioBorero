@@ -12,10 +12,11 @@ Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_COGNOME" the value "Patti"
     And I close the keyboard if its open
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_CF" the value "PTTGRL85C10C351C"
-	     #And I close the keyboard if its open#mette la cittadinanza a straniero
+	     #And I close the keyboard if its open
  #Then I check the "creaAccountPrivatoFirstPart" page
     #And I check the "creaAccountPrivatoSecondPart" page
-	And I scroll down until "MioBorderoLogin.flag_lettura_2" is displayed
+	And I scroll down until MioBorderoLogin.flag_lettura_2 is displayed
+	#And I scroll down until "MioBorderoLogin.flag_lettura_2" is displayed
     #And I scrollDownToElementAndCenter until "xpath" with tag "MioBorderoLogin.flag_lettura_2"  is displayed
     #And I "insert" "xpath" with tags "MioBorderoLogin.et_data_di_nascita" the value "10/03/1985"
     #And I close the keyboard if its open
@@ -43,3 +44,6 @@ Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_Cellulare" the value "3935561211"
     And I close the keyboard if its open
     And I "click" "xpath" with tags "MioBorderoLogin.btn_invia_sms" the value ""
+	
+	
+	
