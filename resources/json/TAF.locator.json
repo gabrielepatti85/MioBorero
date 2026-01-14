@@ -437,8 +437,10 @@
 
       {
         "name": "lbl_non_ho_la_cittadinanza_italiana",
-        "xpath": "//android.widget.TextView[@text='Non ho la cittadinanza italiana']",
-        "UiSelector": "new UiSelector().text(\"Non ho la cittadinanza italiana\").className(\"android.widget.TextView\")",
+        "xpathold": "//android.widget.TextView[@text='Non ho la cittadinanza italiana']",
+		"xpath": "//android.widget.Switch[@content-desc=\"Non ho la cittadinanza italiana\"]",
+        "UiSelectorold": "new UiSelector().text(\"Non ho la cittadinanza italiana\").className(\"android.widget.TextView\")",
+		"UiSelector": "new UiSelector().resourceIdMatches(\".*v-.*\")",
         "status": "TBD",
         "visible": true,
         "enabled": true,
