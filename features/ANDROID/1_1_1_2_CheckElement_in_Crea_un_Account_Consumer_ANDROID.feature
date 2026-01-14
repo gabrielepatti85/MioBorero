@@ -12,4 +12,4 @@ Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_COGNOME" the value "Patti"
     And I close the keyboard if its open
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_CF" the value "PTTGRL85C10C351C"
-    And I close the keyboard if its open
+	
