@@ -393,7 +393,7 @@
       {
         "name": "et_edittext_NOME",
         "xpath": "//*[@resource-id='app']//android.view.View//android.view.View[position()=2]//android.view.View[position()=1]//android.widget.EditText[position()=1]",
-        "UiSelector": "new UiSelector().className(\"android.widget.EditText\")",
+        "UiSelector": "new UiSelector().className(\"android.widget.EditText\").instance(0)",
         "status": "TBD",
         "visible": true,
         "enabled": true,
@@ -408,7 +408,7 @@
       {
         "name": "et_edittext_COGNOME",
         "xpath": "//*[@resource-id='app']//android.view.View//android.view.View[position()=2]//android.view.View[position()=2]//android.widget.EditText[position()=1]",
-        "UiSelector": "new UiSelector().className(\"android.widget.EditText\")",
+        "UiSelector": "new UiSelector().className(\"android.widget.EditText\").instance(1)",
         "status": "TBD",
         "visible": true,
         "enabled": true,
@@ -423,7 +423,7 @@
       {
         "name": "et_edittext_CF",
         "xpath": "//*[@resource-id='app']//android.view.View//android.view.View[position()=2]//android.view.View[position()=3]//android.widget.EditText[position()=1]",
-        "UiSelector": "new UiSelector().className(\"android.widget.EditText\")",
+        "UiSelector": "new UiSelector().className(\"android.widget.EditText\").instance(2)",
         "status": "TBD",
         "visible": true,
         "enabled": true,
