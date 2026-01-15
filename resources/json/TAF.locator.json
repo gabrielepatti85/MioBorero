@@ -667,6 +667,21 @@
         "child": null,
         "component": null
       },
+	  {
+        "name": "nazionalità",
+        "xpath": "//android.view.View[@text=\"Nazionalità *\"]/android.view.View/android.widget.EditText",
+        "UiSelector": "new UiSelector().className(\"android.widget.EditText\").instance(3)",
+        "status": "TBD",
+        "visible": true,
+        "enabled": true,
+        "href": null,
+        "image_id": null,
+        "xpath_secondary": [],
+        "attribute": [],
+        "child": null,
+        "component": null
+      },
+	  
       {
         "name": "comune",
         "xpath": "//android.view.View[@text=\"Comune di nascita *\"]/android.view.View/android.widget.EditText",
