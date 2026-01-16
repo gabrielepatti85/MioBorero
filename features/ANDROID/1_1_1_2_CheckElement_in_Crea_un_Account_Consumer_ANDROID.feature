@@ -20,6 +20,7 @@ Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
 	And I scroll down until MioBorderoLogin.comune is displayed
     And I "insert" "xpath" with tag "MioBorderoLogin.comune" and text "Catania"
     And I close the keyboard if its open
+	And I scroll down until MioBorderoLogin.flag_lettura_2 is displayed
 	Then I click MioBorderoLogin.flag_lettura_click
     And I "click" "xpath" with tags "MioBorderoLogin.flag_lettura_click" the value ""
     And I "click" "xpath" with tags "MioBorderoLogin.flag_lettura_2_click" the value ""
