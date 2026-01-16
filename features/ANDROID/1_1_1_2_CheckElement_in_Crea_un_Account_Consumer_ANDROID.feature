@@ -14,9 +14,9 @@ Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_CF" the value "PTTGRL85C10C351C"
 	     And I close the keyboard if its open
 		#And I "insert" "xpath" with tag "MioBorderoLogin.nazionalità" and text "italia" 
- #Then I check the "creaAccountPrivatoFirstPart" page
-    #And I check the "creaAccountPrivatoSecondPart" page
-	#And I scroll down until MioBorderoLogin.flag_lettura_2 is displayed
+ Then I check the "creaAccountPrivatoFirstPart" page
+    And I check the "creaAccountPrivatoSecondPart" page
+	And I scroll down until MioBorderoLogin.flag_lettura_2 is displayed
     #And I "insert" "xpath" with tag "MioBorderoLogin.comune" and text "Catania"
     #And I close the keyboard if its open
     And I "click" "xpath" with tags "MioBorderoLogin.flag_lettura_click" the value ""
