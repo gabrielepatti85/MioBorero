@@ -41,7 +41,3 @@ Feature: 1_1_1_2_CheckElement_in_Crea_un_Account_Consumer_ANDROID
     And I "insert" "xpath" with tags "MioBorderoLogin.et_edittext_Cellulare" the value "3935561211"
     And I close the keyboard if its open
     And I "click" "xpath" with tags "MioBorderoLogin.btn_invia_sms" the value ""
-	
-	
-	//android.widget.TextView[@text="Spuntando questa casella, dichiaro di essere consapevole che il mio numero di telefono sarà utilizzato per la verifica, tramite SMS, della mia identità da parte dei Servizi Online di SIAE."]
-	//android.widget.TextView[@text='Spuntando questa casella, dichiaro di essere consapevole che il mio numero di telefono sarà utilizzato per la verifica, tramite SMS, della mia identità da parte dei Servizi Online di SIAE.'])
